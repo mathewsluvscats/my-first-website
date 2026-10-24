@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My First Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 24px;
+      background: #1d293d;
+    }
+
+    main {
+      padding: 70px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    p {
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+
+    button {
+      padding: 14px 24px;
+      border: none;
+      border-radius: 8px;
+      background: #3b82f6;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2563eb;
+    }
+
+    footer {
+      padding: 20px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <strong>MY WEBSITE</strong>
+  </header>
+
+  <main>
+    <h1>Hello, world!</h1>
+
+    <p>
+      Welcome to my first website.
+      I built this using HTML, CSS, and JavaScript.
+    </p>
+
+    <button onclick="sayHello()">
+      Click me
+    </button>
+
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    My first website — 2026
+  </footer>
+
+  <script>
+    function sayHello() {
+      document.getElementById("message").textContent =
+        "It works! My JavaScript is running.";
+    }
+  </script>
+</body>
+</html>
